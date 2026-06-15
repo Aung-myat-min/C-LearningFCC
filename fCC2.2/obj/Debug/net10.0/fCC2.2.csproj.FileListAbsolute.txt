@@ -1,0 +1,14 @@
+D:\GitHub\learning\CSharpLearning\fCC2.2\bin\Debug\net10.0\fCC2.2.exe
+D:\GitHub\learning\CSharpLearning\fCC2.2\bin\Debug\net10.0\fCC2.2.deps.json
+D:\GitHub\learning\CSharpLearning\fCC2.2\bin\Debug\net10.0\fCC2.2.runtimeconfig.json
+D:\GitHub\learning\CSharpLearning\fCC2.2\bin\Debug\net10.0\fCC2.2.dll
+D:\GitHub\learning\CSharpLearning\fCC2.2\bin\Debug\net10.0\fCC2.2.pdb
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.AssemblyInfoInputs.cache
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.AssemblyInfo.cs
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.csproj.CoreCompileInputs.cache
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.dll
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\refint\fCC2.2.dll
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.pdb
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\fCC2.2.genruntimeconfig.cache
+D:\GitHub\learning\CSharpLearning\fCC2.2\obj\Debug\net10.0\ref\fCC2.2.dll
