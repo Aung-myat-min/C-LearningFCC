@@ -257,13 +257,13 @@ do
                 if (ourAnimals[i, 0] != "ID #: ")
                 {
                     // search the missing age and description
-                    if (ourAnimals[i, 2] == "Age: " || ourAnimals[i, 4] == "Physical description: ")
+                    if (ourAnimals[i, 2] == "Age: ?" || ourAnimals[i, 4] == "Physical description: ")
                     {
                         string id = ourAnimals[i, 0];
                         bool validEntry = false;
                         int age = -1;
                         string physicalDescription = "";
-                        if (ourAnimals[i, 2] == "Age: ")
+                        if (ourAnimals[i, 2] == "Age: ?")
                         {
                             do
                             {
@@ -275,7 +275,7 @@ do
                                 }
                             } while (validEntry == false);
 
-                            ourAnimals[i, 2] = "Age: " + animalAge;
+                            ourAnimals[i, 2] = "Age: " + age;
 
                         }
                         if (ourAnimals[i, 4] == "Physical description: ")
@@ -290,7 +290,7 @@ do
                                 }
                             } while (validEntry == false);
 
-                            ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+                            ourAnimals[i, 4] = "Physical description: " + physicalDescription;
 
                         }
 
