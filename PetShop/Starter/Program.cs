@@ -21,7 +21,7 @@ for (int i = 0; i < maxPets; i++)
 {
     switch (i)
     {
-        case (0):
+        case 0:
             {
                 animalSpecies = "dog";
                 animalID = "d1";
@@ -31,7 +31,7 @@ for (int i = 0; i < maxPets; i++)
                 animalNickname = "lola";
                 break;
             }
-        case (1):
+        case 1:
             {
                 animalSpecies = "dog";
                 animalID = "d2";
@@ -41,7 +41,7 @@ for (int i = 0; i < maxPets; i++)
                 animalNickname = "loki";
                 break;
             }
-        case (2):
+        case 2:
             {
                 animalSpecies = "cat";
                 animalID = "c3";
@@ -51,7 +51,7 @@ for (int i = 0; i < maxPets; i++)
                 animalNickname = "Puss";
                 break;
             }
-        case (3):
+        case 3:
             {
                 animalSpecies = "cat";
                 animalID = "c4";
@@ -109,7 +109,7 @@ do
 
     switch (menuSelection)
     {
-        case ("1"):
+        case "1":
             for (int i = 0; i < maxPets; i++)
             {
                 if (ourAnimals[i, 0] != "ID #: ")
@@ -122,7 +122,7 @@ do
                 }
             }
             break;
-        case ("2"):
+        case "2":
             string anotherPet = "y";
             int petCount = 0;
             for (int i = 0; i < maxPets; i++)
@@ -251,22 +251,67 @@ do
                 }
             }
             break;
-        case ("3"):
-            // Ensure animal ages and physical descriptions are complete
+        case "3":
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 0] != "ID #: ")
+                {
+                    // search the missing age and description
+                    if (ourAnimals[i, 2] == "Age: " || ourAnimals[i, 4] == "Physical description: ")
+                    {
+                        string id = ourAnimals[i, 0];
+                        bool validEntry = false;
+                        int age = -1;
+                        string physicalDescription = "";
+                        if (ourAnimals[i, 2] == "Age: ")
+                        {
+                            do
+                            {
+                                Console.WriteLine($"Enter an age for {id}");
+                                readResult = Console.ReadLine();
+                                if (readResult != null)
+                                {
+                                    validEntry = int.TryParse(readResult, out age);
+                                }
+                            } while (validEntry == false);
+
+                            ourAnimals[i, 2] = "Age: " + animalAge;
+
+                        }
+                        if (ourAnimals[i, 4] == "Physical description: ")
+                        {
+                            do
+                            {
+                                Console.WriteLine($"Enter a physical description for {id} (size, color, gender, weight, housebroken)");
+                                readResult = Console.ReadLine();
+                                if (readResult != null && readResult.Length > 0)
+                                {
+                                    physicalDescription = readResult.Trim();
+                                }
+                            } while (validEntry == false);
+
+                            ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+
+                        }
+
+                    }
+                }
+
+            }
             break;
-        case ("4"):
+        case "4":
             // Ensure animal nicknames and personality descriptions are complete
             break;
-        case ("5"):
+        case "5":
             // Edit an animal’s age
             break;
-        case ("6"):
+        case "6":
             // Edit an animal’s personality description
             break;
-        case ("7"):
+        case "7":
             // Display all cats with a specified characteristic
             break;
-        case ("8"):
+        case "8":
             // Display all dogs with a specified characteristic
             break;
         default:
