@@ -11,8 +11,6 @@ string[,] external =
     {"Shay", "Lawrence"}, {"Daren", "Valdes"}
 };
 
-string externalDomain = "hayworth.com";
-
 for (int i = 0; i < corporate.GetLength(0); i++)
 {
     string firstName = corporate[i, 0];
@@ -29,7 +27,7 @@ for (int i = 0; i < external.GetLength(0); i++)
     DisplayEmail(firstName, lastName);
 }
 
-void DisplayEmail(string firstName, string lastName, string domain = "contoso.com")
+void DisplayEmail(string firstName, string lastName, string domain = "hayworth.com")
 {
     firstName = firstName.Substring(0, 2).ToLower();
     lastName = lastName.ToLower();
